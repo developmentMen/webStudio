@@ -7,39 +7,45 @@
 		  position: relative;
 		}
 		body {
-			min-height: 100%
+			min-height: 100%;
+			height: auto;
+			width: auto;
 		}
 		
 		.cabezera {
-		overflow: hidden;
 		text-align: center;
-		padding: 14px 16px;
-		border-bottom: 3px solid transparent;
+		padding: 15px 17px;
 		font-size: 55px;
+		width:100%;
+        margin:0 auto;
+        display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: red;
 		}
 		.cabezera :hover {
 		border-bottom: 3px solid blue;
 		}
 		.cab {
-			display: inline-block;
-			margin: 5px;
+			margin: 30px;
 		}
 
 		#Destacados{
 			overflow: auto;
 			position: absolute;
-			top:50%;
-			left:50%;
-			width:700px;
-			margin-left:-350px;
-			height:250px;
-			margin-top:-200px;
+			width:auto;
+			height:300px;
 			padding:5px;
+			display: unset;
+			justify-content: center;
+			align-items: center;
+			left: 5%;
+			background-color: blue;
 			}
 
-		.dest {
+		#producto{
+			display: inline-block;
 			text-align: center;
-
 		}
 
 		footer {
@@ -60,41 +66,57 @@
 
 	<title>ejemplo</title>
 </head>
+
 <body>
 <!--Cabezera-->
 	<div class="cabezera">
-		<div class="cab">inicio</div>
-		<div class="cab">tienda</div>
-		<div class="cab">Contacto</div>
+		<div class="cab">Inicio		</div>
+		<div class="cab">Tienda		</div>
+		<div class="cab">Contacto	</div>
 	</div>
 
 <!--Destacados-->
 	<div>
 		<div id="Destacados">
-			<div style="display: inline-block;">
-				<img src="./img/c1.png" style="width: 160px;height: 160px">
-				<img src="./img/c2.png" style="width: 160px;height: 160px">
-				<img src="./img/c3.png" style="width: 160px;height: 160px">
-				<img src="./img/c4.png" style="width: 160px;height: 160px">
+			<div id="producto">
+				<img src="./img/c1.png" style="width: 200px;height: 200px">
 			</div>
-			<div style="display: inline-block;">
-				<img src="./img/c1.png" style="width: 160px;height: 160px">
-				<img src="./img/c2.png" style="width: 160px;height: 160px">
-				<img src="./img/c3.png" style="width: 160px;height: 160px">
-				<img src="./img/c4.png" style="width: 160px;height: 160px">
+			<div id="producto">
+				<img src="./img/c2.png" style="width: 200px;height: 200px">
 			</div>
-			<div style="display: inline-block;">
-				<img src="./img/c1.png" style="width: 160px;height: 160px">
-				<img src="./img/c2.png" style="width: 160px;height: 160px">
-				<img src="./img/c3.png" style="width: 160px;height: 160px">
-				<img src="./img/c4.png" style="width: 160px;height: 160px">
+			<div id="producto">
+				<img src="./img/c3.png" style="width: 200px;height: 200px">
 			</div>
+			<div id="producto">
+				<img src="./img/c4.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c1.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c2.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c3.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c4.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c1.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c2.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">	
+				<img src="./img/c3.png" style="width: 200px;height: 200px">
+			</div>
+			<div id="producto">
+				<img src="./img/c4.png" style="width: 200px;height: 200px">
 		</div>
-		<div style="position: relative;">
-			<h2 class="dest">
+		<h2>
 			Destacados
-			</h2>
-		</div>
+		</h2>
 	</div>
 
 <!--Tienda-->
